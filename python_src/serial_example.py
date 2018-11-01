@@ -8,7 +8,11 @@ output = " "
 ser = serial.Serial('/dev/ttyACM0', 9600, 8, 'N', 1, timeout=1)
 
 while True:
-    while output != "":
-        output = ser.readline()
-        print output
-        output = " "
+    try:
+        while output != "":
+            output = ser.readline()
+            print output
+            output = " "
+    except KeyboardInterrupt:
+        print "Interrupted by user."
+        break
