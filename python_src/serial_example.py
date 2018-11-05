@@ -14,5 +14,5 @@ while True:
             print output
             output = " "
     except KeyboardInterrupt:
-        print "Interrupted by user."
+        print "Interrupted by the user."
         break
