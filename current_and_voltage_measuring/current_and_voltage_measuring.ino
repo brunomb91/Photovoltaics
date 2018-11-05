@@ -3,13 +3,13 @@
 EnergyMonitor emon1;                   // Create an instance
 
 //Calibration: current, 21.0; voltage: 637.75 (Windows)
-//Calibration: current, 6.0; voltage: 550.0 (Raspberry)
+//Calibration: current, 6.0; voltage: 610.0 (Raspberry)
 void setup()
 {  
   Serial.begin(9600);
   
   emon1.current(1, 6);             // Current: input pin, calibration.
-  emon1.voltage(5, 580, 1.7);  // Voltage: input pin, calibration, phase_shift
+  emon1.voltage(5, 610, 1.7);  // Voltage: input pin, calibration, phase_shift
 
 }
 
