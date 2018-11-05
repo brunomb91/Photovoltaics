@@ -16,3 +16,7 @@ while True:
     except KeyboardInterrupt:
         print "Interrupted by the user."
         break
+    except serial.serialutil.SerialException:
+        print "Serial used by another user."
+        break
+         
