@@ -28,7 +28,7 @@ try:
         # print output
         else:
             y = convert_to_dict(output)
-            with open("data_arduino.json", "w") as f:
+            with open("web/data_arduino.json", "w") as f:
                 f.write(y)
             # print y
         # output = " "
