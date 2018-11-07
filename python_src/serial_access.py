@@ -28,7 +28,9 @@ try:
         # print output
         else:
             y = convert_to_dict(output)
-            print y
+            with open("data_arduino.json", "w") as f:
+                f.write(y)
+            # print y
         # output = " "
 except KeyboardInterrupt:
     print "Interrupted by the user."
