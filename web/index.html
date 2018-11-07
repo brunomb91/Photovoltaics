@@ -3,24 +3,13 @@
 
 <body>
 	<p>Esta tabela exibe em tempo real as medições de tensão e corrente: </p>
-	<table>
-		<tr>
-			<th>Tipo de medição</th>
-			<th>Valor</th>
-		</tr>
-		<tr>
-			<td>Irms</td>
-			<td>0.06</td>
-		</tr>
-		<tr>
-			<td>Vrms</td>
-			<td>220.0</td>
-		</tr>
-		<tr>
-			<td>Real Power</td>
-			<td>13.2</td>
-		</tr>
+	<p id="text"></p>
 
-	</table>
+        <script>        
+                var myData = require("data_arduino.json");
+		document.getElementById("text").innerHTML = myData.Irms + "\n" 
+		+ myData.Vrms + "\n" +,
+	        myData.power + "\n";
+        </script>
 </body>
 </html>
