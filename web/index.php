@@ -1,6 +1,7 @@
 <html>
 <head>
-	<title>Valores</title>
+	<title>Measurements</title>
+        <h1>Measurements</h1>
 </head>
 
 <body>
