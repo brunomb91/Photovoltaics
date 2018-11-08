@@ -5,6 +5,9 @@
 </head>
 
 <body>
+        <script>
+          setTimeout(function() { window.location=window.location;}, 3000); 
+        </script>
 	<p>Voltage, current and power results: </p>
 	<?php
 	   $url = 'data_arduino.json';
