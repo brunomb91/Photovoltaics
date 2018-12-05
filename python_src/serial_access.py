@@ -28,6 +28,7 @@ try:
         # print output
         else:
             y = convert_to_dict(output)
+	    # The path must be /var/www/web/data_arduino.json to show the data on the web page
             with open("web/data_arduino.json", "w") as f:
                 f.write(y)
             # print y

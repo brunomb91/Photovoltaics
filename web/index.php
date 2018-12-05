@@ -42,7 +42,7 @@
 
 <body>
         <script>
-          setTimeout(function() { window.location=window.location;}, 3000); 
+          setTimeout(function() { window.location=window.location;}, 2000); 
         </script>
 	<p>Voltage, current and power results: </p>
 	<?php
